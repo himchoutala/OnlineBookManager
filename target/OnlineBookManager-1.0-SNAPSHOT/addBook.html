@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(23, 40, 24, 0.8);
+    color: #ffff;
+    align-items: center;
+    margin: 0;
+}
+
+/* Login Form Container */
+form {
+    align-items: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    color: #333;
+    margin-left: 510px;
+}
+
+/* Headings */
+h2 {
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    margin-top:100px;
+    font-size: 40px;
+}
+
+/* Labels and Inputs */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Error Message Styling */
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+.dashboard-btn {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.dashboard-btn a {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color:skyblue;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-btn a:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+
+    </style>
+</head>
+<body>
+    <h2>Add Book</h2>
+    <form action="addBook" method="post">
+    <label>Title:</label><input type="text" name="title" required><br><br>
+    <label>Author:</label><input type="text" name="author" required><br><br>
+    <label>Price:</label><input type="number" name="price" required><br><br>
+    <input type="submit" value="Add Book">
+</form>
+ <div class="dashboard-btn">
+        <a href="dashboard.html">Back to Dashboard</a>
+    </div>
+</body>
+</html>

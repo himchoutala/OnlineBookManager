@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+<head>
+    <title>Search Book</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(23, 40, 24, 0.8);
+    color: #ffff;
+    align-items: center;
+    margin: 0;
+}
+
+/* Login Form Container */
+form {
+    align-items: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    color: #333;
+    margin-left: 510px;
+}
+
+/* Headings */
+h2 {
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    margin-top:100px;
+    font-size: 40px;
+}
+
+/* Labels and Inputs */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Error Message Styling */
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+ .dashboard-btn {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .dashboard-btn a {
+            padding: 10px 25px;
+            background-color: skyblue;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .dashboard-btn a:hover {
+            background-color: #27ae60;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Search Book</h2>
+    <form action="searchBook" method="get">
+        <label>Keyword (Title or Author):</label>
+        <input type="text" name="keyword" required><br><br>
+        <input type="submit" value="Search">
+    </form>
+    <div style="text-align: right; margin: 20px;">
+    <a href="dashboard.html" style="
+        padding: 10px 20px;
+        background-color: #2ecc71;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+    ">Back to Dashboard</a>
+</div>
+</body>
+</html>
+

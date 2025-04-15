@@ -1,0 +1,10 @@
+com\bookapp\servlet\UpdateBookServlet.class
+com\bookapp\servlet\ViewBooksServlet.class
+com\bookapp\servlet\SearchBookServlet.class
+com\bookapp\dao\BookDAO.class
+com\bookapp\model\Book.class
+com\bookapp\servlet\LoginServlet.class
+com\employee\onlinebookmanager\JakartaRestConfiguration.class
+com\bookapp\servlet\AddBookServlet.class
+com\employee\onlinebookmanager\resources\JakartaEE10Resource.class
+com\bookapp\servlet\DeleteBookServlet.class

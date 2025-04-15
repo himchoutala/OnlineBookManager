@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {display: flex;font-family: Arial, sans-serif;background-color: rgba(23, 40, 24, 0.8);}
+        .sidebar {width: 200px;background: #333;color: white;height: 100vh;padding: 20px;box-sizing: border-box;}
+        .sidebar a { color: white; text-decoration: none; display: block;margin-bottom: 15px;}
+        .main {padding: 20px; flex: 1;}
+        p{color: #ffffff;}
+         h3{color: #ffffff;}
+         h2{color: #ffffff;}
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Menu</h3>
+        <a href="addBook.html">Add Book</a> <!-- Update this to the correct JSP file -->
+        <a href="viewBooks.jsp">View Books</a> <!-- Update this to the correct JSP file or Servlet URL -->
+        <a href="searchBook.html">Search Book</a> <!-- Update this to the correct JSP file -->
+    </div>
+    <div class="main">
+        <h2>Welcome Admin</h2>
+        <p>Select an operation from the sidebar.</p>
+    </div>
+    <script>
+    const ctx = document.getElementById('bookStats').getContext('2d');
+    const bookChart = new Chart(ctx, {
+        type: 'bar', // 'bar', 'line', 'pie', etc.
+        data: {
+            labels: ['Fiction', 'Science', 'History', 'Programming', 'Others'],
+            datasets: [{
+                label: 'Number of Books',
+                data: [12, 19, 7, 14, 5],
+                backgroundColor: [
+                    '#3498db',
+                    '#2ecc71',
+                    '#e67e22',
+                    '#9b59b6',
+                    '#e74c3c'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: { beginAtZero: true }
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
